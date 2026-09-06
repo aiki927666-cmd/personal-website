@@ -1,0 +1,54 @@
+/* Motion-only layer: every object stays inside its original footprint */
+.object {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+.object.is-mounted {
+  opacity: 1;
+  transform: rotate(var(--r));
+  animation: none;
+}
+
+.object:hover,
+.object:focus-visible,
+.object.is-mounted:hover,
+.object.is-mounted:focus-visible,
+.archive-folder:hover,
+.archive-folder:focus-within {
+  filter: drop-shadow(0 7px 5px rgba(110,48,37,.15));
+  animation: card-wiggle-scale .58s ease-in-out both;
+}
+
+@keyframes card-wiggle-scale {
+  0%, 100% { opacity: 1; transform: rotate(var(--r)) scale(1); }
+  28% { opacity: 1; transform: rotate(calc(var(--r) + 1.15deg)) scale(1.017); }
+  62% { opacity: 1; transform: rotate(calc(var(--r) - .85deg)) scale(1.022); }
+  82% { opacity: 1; transform: rotate(calc(var(--r) + .38deg)) scale(1.012); }
+}
+
+.journal-scrap {
+  pointer-events: auto;
+  transform-origin: 50% 50%;
+  cursor: default;
+}
+.journal-scrap--clock:hover { animation: clock-wiggle .56s ease-in-out both; }
+.journal-scrap--note:hover { animation: note-wiggle .56s ease-in-out both; }
+
+@keyframes clock-wiggle {
+  0%, 100% { transform: rotate(-7deg); }
+  30% { transform: rotate(-4.8deg); }
+  68% { transform: rotate(-8.8deg); }
+}
+@keyframes note-wiggle {
+  0%, 100% { transform: rotate(-5deg); }
+  30% { transform: rotate(-2.8deg); }
+  68% { transform: rotate(-6.9deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .object:hover,
+  .object:focus-visible,
+  .archive-folder:hover,
+  .archive-folder:focus-within,
+  .journal-scrap:hover { animation: none !important; }
+}

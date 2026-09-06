@@ -1,0 +1,11 @@
+.sidebar-note { width: 100%; margin-top: auto; gap: 0; overflow: visible; }
+.sidebar-note span { display: block; width: max-content; color: #35302d; font-family: "Manrope","Noto Sans SC",sans-serif; font-weight: 600; line-height: .84; letter-spacing: -.065em; }
+.sidebar-note .focus-content { font-size: clamp(37px,3vw,41px); }
+.sidebar-note .focus-communication { margin-top: 8px; font-size: clamp(16.5px,1.5vw,19px); letter-spacing: -.035em; }
+.sidebar-note .focus-creation { margin-top: 10px; margin-left: 0; font-size: clamp(30px,2.5vw,34px); }
+.sidebar-note .focus-culture { margin-top: 6px; margin-left: 0; padding: 0; color: #35302d; background: transparent; font-size: clamp(40px,3.2vw,45px); letter-spacing: -.075em; transform: none; }
+.sidebar-qr { width: 84px; margin-top: 14px; padding: 6px 6px 5px; background: #fffdf7; border: 1px solid rgba(110,48,37,.16); box-shadow: 3px 4px 0 rgba(110,48,37,.12); transform: none; }
+.sidebar-qr img { display: block; width: 100%; height: auto; image-rendering: auto; }
+.sidebar-qr span { display: block; margin-top: 5px; color: #6e3025; text-align: center; font: 600 5px "Manrope",sans-serif; letter-spacing: .1em; }
+@media(max-width:1050px){.sidebar-note .focus-content{font-size:31px}.sidebar-note .focus-communication{font-size:14px}.sidebar-note .focus-creation{font-size:26px}.sidebar-note .focus-culture{font-size:35px}}
+@media(max-width:800px){.sidebar-note,.sidebar-place,.sidebar-qr{display:none}}

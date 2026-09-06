@@ -1,0 +1,70 @@
+/* Collage-only layer: decorative details without changing content or interaction */
+.object { overflow: visible; }
+
+/* shared paper grain, softened creases and aged edges */
+.about-tag,
+.archive-folder,
+.profile-card,
+.skills-tag,
+.current-tag,
+.contact-envelope {
+  background-image:
+    radial-gradient(ellipse at 12% 18%, rgba(110,48,37,.075), transparent 21%),
+    radial-gradient(ellipse at 88% 76%, rgba(110,48,37,.055), transparent 25%),
+    repeating-linear-gradient(2deg, transparent 0 3px, rgba(53,48,45,.026) 3px 4px),
+    linear-gradient(112deg, rgba(255,255,255,.24), transparent 42%, rgba(53,48,45,.035));
+  background-blend-mode: multiply, multiply, soft-light, normal;
+  box-shadow:
+    2px 7px 15px rgba(110,48,37,.15),
+    inset 0 0 0 1px rgba(255,255,255,.30),
+    inset 0 0 18px rgba(110,48,37,.035);
+}
+.archive-folder,
+.profile-card,
+.contact-envelope { outline: 1px solid rgba(110,48,37,.10); outline-offset: -3px; }
+.about-tag,
+.current-tag { box-shadow: 2px 6px 12px rgba(110,48,37,.16), inset 0 0 14px rgba(110,48,37,.07); }
+.skills-tag { box-shadow: 3px 8px 16px rgba(23,23,23,.22), inset 0 0 18px rgba(255,255,255,.035); }
+.about-tag {
+  background-image:
+    radial-gradient(ellipse at 9% 20%, rgba(110,48,37,.14), transparent 21%),
+    radial-gradient(ellipse at 91% 77%, rgba(110,48,37,.11), transparent 25%),
+    repeating-linear-gradient(1deg, transparent 0 3px, rgba(53,48,45,.045) 3px 4px),
+    linear-gradient(112deg, rgba(255,255,255,.18), transparent 38%, rgba(110,48,37,.08));
+  box-shadow: 2px 7px 14px rgba(110,48,37,.18), inset 0 0 19px rgba(110,48,37,.10);
+}
+.about-tag .object-no,
+.about-tag strong,
+.about-tag small,
+.about-tag em { transform: translateY(-10px); }
+
+.about-tag {
+  clip-path: polygon(12% 0, 100% 0, 99% 94%, 94% 96%, 88% 94%, 81% 97%, 73% 95%, 65% 98%, 57% 95%, 48% 98%, 40% 96%, 31% 99%, 22% 96%, 13% 98%, 3% 95%, 0 25%);
+}
+
+.binder-holes { position: absolute; left: -15px; top: 45px; bottom: 30px; width: 12px; background: repeating-linear-gradient(to bottom, #171717 0 9px, transparent 9px 22px); filter: drop-shadow(1px 1px 0 rgba(255,253,247,.8)); }
+.paper-tape { position: absolute; display: block; background: rgba(235,199,122,.72); box-shadow: 0 1px 2px rgba(110,48,37,.10); }
+.paper-tape--archive { right: -13px; bottom: 24px; width: 55px; height: 18px; transform: rotate(-8deg); clip-path: polygon(3% 8%, 98% 0, 94% 91%, 1% 100%); }
+
+.blue-tape { position: absolute; left: 44px; top: -10px; width: 40px; height: 24px; display: grid; place-items: center; color: rgba(255,255,255,.75); background: rgba(34,112,183,.83); font: 500 6px/1 "Manrope"; letter-spacing: .12em; transform: rotate(2deg); box-shadow: 0 2px 3px rgba(23,23,23,.2); }
+.side-paperclip { position: absolute; right: -12px; top: 42px; width: 33px; height: 12px; border: 2px solid #B9B6B0; border-radius: 8px; transform: rotate(-3deg); box-shadow: inset 0 0 0 1px rgba(53,48,45,.16), 1px 2px 2px rgba(23,23,23,.18); }
+
+.pink-tape { position: absolute; left: -7px; top: -11px; width: 55px; height: 20px; background: rgba(207,113,130,.72); transform: rotate(-5deg); clip-path: polygon(3% 13%, 96% 0, 100% 83%, 5% 100%); box-shadow: 0 2px 3px rgba(110,48,37,.13); }
+
+.journal-scrap { position: absolute; z-index: 1; display: block; object-fit: cover; pointer-events: none; mix-blend-mode: multiply; filter: drop-shadow(2px 4px 4px rgba(110,48,37,.13)); }
+.journal-scrap--clock { right: 25.5%; top: 41%; width: 86px; height: 122px; object-position: center; transform: rotate(-7deg); clip-path: polygon(5% 2%, 95% 0, 100% 96%, 2% 100%); opacity: .92; }
+.journal-scrap--note { left: 11.5%; top: 39%; width: 190px; height: auto; z-index: 4; object-fit: contain; mix-blend-mode: normal; transform: rotate(-5deg); clip-path: none; opacity: 1; }
+
+@media (max-width: 1050px) {
+  .journal-scrap--clock { right: 23%; }
+  .journal-scrap--note { left: 12%; width: 165px; }
+}
+@media (max-width: 800px) {
+  .journal-scrap--clock { right: 11%; top: 22.5%; width: 62px; height: 88px; }
+  .journal-scrap--note { left: 35%; top: 19%; width: 112px; height: auto; }
+}
+@media (max-width: 520px) {
+  .binder-holes { left: -8px; width: 8px; }
+  .archive-star { right: 7px; }
+  .side-paperclip { right: -7px; }
+}

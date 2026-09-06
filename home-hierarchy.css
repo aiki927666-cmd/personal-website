@@ -1,0 +1,22 @@
+/* Home information hierarchy refinement. */
+@media(min-width:801px){
+ .archive-folder{top:21%;height:58%;padding-bottom:16px}
+ .archive-folder footer{bottom:12px}
+ .archive-list{margin-top:7px}
+ .archive-list button{min-height:43px;padding-block:6px}
+ .archive-list span{line-height:1.12}
+ .archive-primary{position:relative;overflow:hidden;min-height:58px!important;background:rgba(255,253,247,.45)!important}
+ .archive-primary span{font-weight:700}
+ .archive-primary em{display:block;margin-top:3px;color:#167ab4;font:600 6px "Manrope",sans-serif;letter-spacing:.07em}
+ .archive-primary small{margin-top:3px}
+ .archive-primary:after{position:absolute;inset:0 auto 0 -55%;width:38%;background:linear-gradient(100deg,transparent,rgba(34,168,232,.18),transparent);content:"";animation:archive-first-glint 1.25s .95s ease-out 1 both;pointer-events:none}
+ .about-tag small{margin-top:9px;font:600 8px/1.45 "Manrope",sans-serif;letter-spacing:.01em}
+ .about-tag em{bottom:14px;font-weight:700}
+ .profile-card .education{margin-top:15px;font-size:8px;line-height:1.7}.profile-card .education b{font-size:9px}.profile-card em{font-weight:700}
+ .contact-envelope strong{max-width:75%;font-size:14px;line-height:1.08}.contact-envelope small{margin-top:6px;font-weight:700;letter-spacing:.08em}.contact-envelope .address{font-weight:700}
+}
+@keyframes archive-first-glint{0%{left:-55%;opacity:0}15%{opacity:1}100%{left:125%;opacity:0}}
+.sidebar-note span{font-size:85%!important;line-height:.92!important}.sidebar-note .focus-content{font-size:35px!important}.sidebar-note .focus-communication{font-size:16px!important;margin-top:7px!important}.sidebar-note .focus-culture{font-size:38px!important;margin-top:8px!important}.sidebar-qr{width:68px;margin-top:10px}.sidebar-qr span{font-size:6px;letter-spacing:.14em}
+@media(max-width:1050px) and (min-width:801px){.sidebar-note .focus-content{font-size:27px!important}.sidebar-note .focus-communication{font-size:12px!important}.sidebar-note .focus-culture{font-size:30px!important}.sidebar-qr{width:69px}}
+@media(max-width:800px){.archive-primary em{display:block;margin-top:4px;color:#167ab4;font:600 7px "Manrope",sans-serif}.archive-folder{height:auto!important}.about-tag small{display:block;margin-top:8px;font-size:9px;line-height:1.35}.contact-envelope strong{font-size:18px;line-height:1.05}}
+@media(prefers-reduced-motion:reduce){.archive-primary:after{animation:none}}

@@ -1,0 +1,8 @@
+.nav a.remote-link-active { color: #6e3025; transform: translateX(5px); }
+.nav a.remote-link-active i { color: #f04a24; }
+.object.remote-active { z-index: 18 !important; opacity: 1; filter: drop-shadow(0 17px 12px rgba(56,47,35,.24)) !important; animation: remote-wobble .5s ease-in-out infinite alternate !important; }
+@keyframes remote-wobble {
+  from { transform: translateY(-3px) rotate(calc(var(--r) - .75deg)) scale(1.025); }
+  to { transform: translateY(-7px) rotate(calc(var(--r) + .75deg)) scale(1.045); }
+}
+@media(prefers-reduced-motion:reduce){.object.remote-active{animation:none!important;transform:translateY(-4px) rotate(var(--r)) scale(1.025)}}

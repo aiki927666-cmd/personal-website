@@ -1,0 +1,103 @@
+.modal:has(.monash-window){width:min(980px,calc(100vw - 34px));overflow:visible;border:0;background:transparent;box-shadow:none}
+.modal:has(.monash-window)::backdrop{background:rgba(53,48,45,.32);backdrop-filter:blur(8px)}
+.modal:has(.monash-window)>.modal-close{right:30px;top:23px;width:34px;height:40px;border:1px solid #766d64;background:#fffdf7;font-size:22px}
+.monash-window{position:relative;isolation:isolate;padding:34px 26px 17px;color:#35302d;background-color:#fffdf7;background-image:radial-gradient(circle,rgba(110,48,37,.1) 0 .55px,transparent .72px);background-size:6px 6px;border:1px solid rgba(110,48,37,.18);box-shadow:0 24px 60px rgba(53,48,45,.28)}
+.monash-paper{position:absolute;inset:0;z-index:-2;background:#f8f2e8;border:1px solid rgba(110,48,37,.13);box-shadow:0 5px 13px rgba(53,48,45,.12)}.monash-paper--one{transform:translate(10px,10px) rotate(.35deg)}.monash-paper--two{transform:translate(-9px,-7px) rotate(-.25deg)}
+.monash-top-clip{position:absolute;top:-34px;left:50%;width:48px;height:45px;border:3px solid #5f5954;border-bottom:0;border-radius:22px 22px 0 0;transform:translateX(-50%)}.monash-top-clip:after{position:absolute;left:-12px;bottom:-12px;width:68px;height:23px;background:#6e3025;box-shadow:0 4px 6px rgba(110,48,37,.25);content:""}
+.monash-window>header{padding:0 10px 10px}.monash-window header .modal-kicker{margin-bottom:9px;color:#6e3025;font-weight:600}.monash-window h2{margin:0;font:400 39px/.9 "BianZhiDai Base","Manrope",sans-serif}.monash-window header>span{display:block;margin-top:7px;font-size:9px;letter-spacing:.08em}.monash-window header>strong{display:block;margin-top:6px;color:#6e3025;font-size:9px;letter-spacing:.08em}
+.campus-context{position:relative;margin:0;height:238px;overflow:hidden;border:1px solid rgba(110,48,37,.18)}.campus-context img{display:block;width:100%;height:100%;object-fit:cover}.campus-context figcaption{position:absolute;right:0;bottom:0;width:47%;padding:10px 14px;background:rgba(255,253,247,.94);border-left:1px solid rgba(110,48,37,.18)}.campus-context b,.campus-context span{display:block}.campus-context b{font-size:8px;letter-spacing:.11em}.campus-context span{margin-top:5px;font-size:9px;line-height:1.5}
+.monash-learning-grid{display:grid;grid-template-columns:1.02fr 1.12fr;gap:25px;margin-top:18px}.monash-photo-pair{display:grid;grid-template-columns:1fr 1.25fr;gap:10px;align-items:start}.monash-photo-pair figure{position:relative;margin:0;padding:7px 7px 27px;background:#fffdf7;box-shadow:4px 6px 11px rgba(53,48,45,.17)}.monash-photo-pair figure:first-child{transform:rotate(-1.4deg)}.monash-photo-pair figure:last-child{transform:rotate(1.2deg)}.monash-photo-pair img{display:block;width:100%;height:175px;object-fit:cover}.monash-photo-pair figure:first-child img{object-position:center}.monash-photo-pair figcaption{position:absolute;left:8px;bottom:8px;font-size:7px;letter-spacing:.08em}.photo-paperclip{position:absolute;top:-15px;left:14px;width:16px;height:39px;border:2px solid #98918a;border-radius:8px;transform:rotate(-18deg)}.photo-tape{position:absolute;top:-9px;left:38%;width:55px;height:18px;background:rgba(229,145,169,.68);transform:rotate(3deg)}.photo-tape--yellow{left:42%;background:rgba(232,181,37,.4);transform:rotate(-3deg)}
+.learning-map h3{margin:0 0 5px;font:500 8px "Manrope",sans-serif;letter-spacing:.12em}.learning-map article{display:grid;grid-template-columns:29px 83px 1fr 1fr;align-items:center;min-height:48px;border-top:1px solid #f04a24}.learning-map article:nth-of-type(2){border-color:#e8b525}.learning-map article:nth-of-type(3){border-color:#22a8e8}.learning-map article:nth-of-type(4){border-color:#39a1ad}.learning-map article>b{color:#f04a24;font:500 15px "Manrope",sans-serif}.learning-map article:nth-of-type(2)>b{color:#d89f00}.learning-map article:nth-of-type(3)>b{color:#268bd2}.learning-map article:nth-of-type(4)>b{color:#31949f}.learning-map strong{padding-right:8px;font-size:8px;line-height:1.15}.learning-map span{height:30px;padding:4px 8px;border-left:1px dotted rgba(53,48,45,.25);font-size:6px;line-height:1.25}.learning-map small{display:block;margin-top:2px;color:#837a74;font:400 5px "Noto Sans SC",sans-serif}
+.monash-output{display:grid;grid-template-columns:1fr 1.08fr;margin-top:17px;border-top:1px solid rgba(110,48,37,.2);border-bottom:1px solid rgba(110,48,37,.2)}.assignment-strip,.grade-board{min-height:77px;padding:14px 16px;background:transparent;box-shadow:none}.assignment-strip{border-right:1px solid rgba(110,48,37,.2)}.assignment-strip b,.grade-board>b{display:block;margin-bottom:14px;font-size:8px;letter-spacing:.1em}.assignment-strip>div{display:flex;justify-content:space-between;font-size:8px;font-weight:600}.assignment-strip i{color:#837a74;font-style:normal}
+.grade-board{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:9px;padding-right:100px}.grade-board>b{grid-column:1/-1}.grade-board span{font-size:5px;line-height:1.25}.grade-board strong{display:block;color:#6e3025;font:400 24px "BianZhiDai Base","Manrope",sans-serif}.grade-board>i{position:absolute;top:14px;right:16px;color:#6e3025;font-size:9px;font-style:normal;font-weight:600}
+.monash-footer{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;margin-top:12px;font-size:7px;letter-spacing:.11em}.monash-footer>i{height:1px;background:rgba(110,48,37,.2)}.monash-footer button{padding:0;border:0;background:transparent;color:#6e3025;font:500 7px "Manrope",sans-serif;letter-spacing:.11em;cursor:pointer}
+@media(max-width:700px){
+ .modal:has(.monash-window){width:calc(100vw - 18px);overflow-y:auto}
+ .modal:has(.monash-window)>.modal-close{right:15px;top:14px}
+ .monash-window{padding:31px 17px 18px}.monash-window h2{font-size:30px}.campus-context{height:220px}.campus-context figcaption{width:80%}
+ .monash-learning-grid{grid-template-columns:1fr}.monash-photo-pair img{height:145px}.learning-map article{grid-template-columns:25px 68px 1fr}.learning-map article span:last-child{grid-column:3;margin-top:-4px}.learning-map article span{height:auto;padding-block:5px}
+ .monash-output{grid-template-columns:1fr}.assignment-strip{border-right:0;border-bottom:1px solid rgba(110,48,37,.2)}.grade-board{padding-right:75px}.monash-footer{gap:9px}
+}
+
+/* Readability pass: narrower file, taller rhythm, larger editorial type. */
+@media(min-width:701px){
+ .modal:has(.monash-window){width:min(900px,calc(100vw - 34px))}
+ .monash-window{padding:36px 30px 20px}
+ .monash-window>header{padding:0 8px 14px}
+ .monash-window header .modal-kicker{font-size:9px}
+ .monash-window h2{font-size:43px}
+ .monash-window header>span{margin-top:9px;font-size:11px}
+ .monash-window header>strong{margin-top:7px;font-size:11px}
+ .campus-context{height:215px}
+ .campus-context figcaption{width:54%;padding:12px 16px}
+ .campus-context b{font-size:10px}.campus-context span{font-size:11px;line-height:1.55}
+ .monash-learning-grid{grid-template-columns:.92fr 1.25fr;gap:27px;margin-top:22px}
+ .monash-photo-pair{grid-template-columns:1fr 1.2fr;gap:12px}
+ .monash-photo-pair figure{padding:8px 8px 32px}
+ .monash-photo-pair img{height:255px}
+ .monash-photo-pair figcaption{bottom:10px;font-size:9px;font-weight:600}
+ .learning-map h3{margin-bottom:9px;font-size:11px;font-weight:600}
+ .learning-map article{grid-template-columns:34px 98px 1fr 1fr;min-height:76px}
+ .learning-map article>b{font-size:18px}
+ .learning-map strong{padding-right:10px;font-size:11px;line-height:1.25}
+ .learning-map span{height:auto;min-height:52px;padding:8px 10px;font-size:10px;line-height:1.35}
+ .learning-map small{margin-top:4px;font-size:8px}
+ .monash-output{margin-top:22px}
+ .assignment-strip,.grade-board{min-height:96px;padding:16px 18px}
+ .assignment-strip b,.grade-board>b{margin-bottom:17px;font-size:10px}
+ .assignment-strip>div{font-size:10px}
+ .grade-board{gap:11px;padding-right:112px}
+ .grade-board span{font-size:7px;line-height:1.3}
+ .grade-board strong{font-size:29px}
+ .grade-board>i{top:16px;right:18px;font-size:11px}
+ .monash-footer{margin-top:15px;font-size:8px}
+}
+
+@media(max-width:700px){
+ .monash-window header .modal-kicker{font-size:9px}
+ .monash-window header>span,.monash-window header>strong{font-size:10px}
+ .campus-context b{font-size:9px}.campus-context span{font-size:10px}
+ .monash-photo-pair figcaption{font-size:7px;font-weight:600}
+ .learning-map h3{font-size:10px}
+ .learning-map article{min-height:86px}
+ .learning-map article>b{font-size:16px}
+ .learning-map strong{font-size:10px}
+ .learning-map span{font-size:9px;line-height:1.4}
+ .learning-map small{font-size:8px}
+ .assignment-strip b,.grade-board>b{font-size:9px}
+ .assignment-strip>div{font-size:9px}
+ .grade-board span{font-size:7px}.grade-board strong{font-size:27px}.grade-board>i{font-size:10px}
+}
+
+/* Match the compact 01 archive footprint while keeping the text legible. */
+@media(min-width:701px){
+ .modal:has(.monash-window){width:min(920px,calc(100vw - 34px))}
+ .monash-window{padding:29px 27px 15px}
+ .monash-window>header{padding-bottom:9px}
+ .monash-window header .modal-kicker{margin-bottom:6px;font-size:8px}
+ .monash-window h2{font-size:38px}
+ .monash-window header>span{margin-top:5px;font-size:10px}
+ .monash-window header>strong{margin-top:4px;font-size:10px}
+ .campus-context{height:165px}
+ .campus-context figcaption{width:51%;padding:8px 13px}
+ .campus-context b{font-size:9px}.campus-context span{margin-top:4px;font-size:10px;line-height:1.4}
+ .monash-learning-grid{grid-template-columns:.92fr 1.25fr;gap:22px;margin-top:14px}
+ .monash-photo-pair{gap:9px}
+ .monash-photo-pair figure{padding:6px 6px 27px}
+ .monash-photo-pair img{height:174px}
+ .monash-photo-pair figcaption{bottom:8px;font-size:8px}
+ .learning-map h3{margin-bottom:5px;font-size:10px}
+ .learning-map article{grid-template-columns:29px 86px 1fr 1fr;min-height:49px}
+ .learning-map article>b{font-size:16px}
+ .learning-map strong{padding-right:7px;font-size:10px;line-height:1.15}
+ .learning-map span{min-height:34px;padding:4px 7px;font-size:9px;line-height:1.2}
+ .learning-map small{margin-top:2px;font-size:7px}
+ .monash-output{margin-top:13px}
+ .assignment-strip,.grade-board{min-height:72px;padding:10px 14px}
+ .assignment-strip b,.grade-board>b{margin-bottom:10px;font-size:9px}
+ .assignment-strip>div{font-size:9px}
+ .grade-board{gap:8px;padding-right:98px}
+ .grade-board span{font-size:6px}.grade-board strong{font-size:24px}
+ .grade-board>i{top:11px;right:14px;font-size:10px}
+ .monash-footer{margin-top:10px;font-size:7px}
+}

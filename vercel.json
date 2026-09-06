@@ -1,0 +1,11 @@
+{
+  "headers": [
+    {
+      "source": "/files/Aiki-Zhou-Resume-2026.pdf",
+      "headers": [
+        { "key": "Content-Type", "value": "application/pdf" },
+        { "key": "Content-Disposition", "value": "inline; filename=\"Aiki-Zhou-Resume-2026.pdf\"" }
+      ]
+    }
+  ]
+}

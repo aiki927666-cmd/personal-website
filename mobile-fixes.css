@@ -1,0 +1,162 @@
+/* Phone layout: keep the tactile collage, but give every archive object its own space. */
+@media (max-width: 600px) {
+  html, body { overflow-x: hidden; }
+
+  .shell { width: 100%; padding: 8px; }
+  .sidebar { width: 100%; padding: 20px 18px 18px; overflow: hidden; }
+  .nav {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px 7px;
+  }
+  .nav a { min-width: 0; font-size: 7px; white-space: nowrap; }
+  .nav a i { width: 18px; }
+
+  .board {
+    display: flex;
+    min-height: 0;
+    padding: 58px 18px 34px;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+  }
+  .board-index { top: 24px; right: 18px; }
+
+  .board > .object {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100%;
+    flex: 0 0 auto;
+    margin: 0;
+  }
+  .about-tag {
+    order: 1;
+    width: 86% !important;
+    min-height: 235px;
+    align-self: flex-start;
+    padding: 54px 28px 26px;
+  }
+  .about-tag strong { font-size: 20px; letter-spacing: 0; }
+  .about-tag small { font-size: 12px; }
+  .about-tag em { left: 28px; bottom: 27px; font-size: 10px; }
+
+  .profile-card {
+    order: 2;
+    width: 92% !important;
+    min-height: 315px;
+    align-self: flex-end;
+    padding: 30px 25px 24px;
+  }
+  .profile-card strong { margin-top: 24px; font-size: 24px; white-space: normal; }
+  .profile-card strong small { margin-left: 4px; font-size: 9px; }
+  .profile-card .education { font-size: 8px; line-height: 1.65; overflow-wrap: anywhere; }
+  .profile-card .education small { font-size: 8px; }
+  .profile-card em { left: 25px; bottom: 22px; font-size: 10px; }
+
+  .archive-folder {
+    order: 3;
+    min-height: 625px;
+    height: auto !important;
+    padding: 30px 20px 25px;
+  }
+  .archive-folder header { display: block; padding-bottom: 17px; }
+  .archive-folder header div { gap: 10px; }
+  .archive-folder h1 { font-size: clamp(21px, 7vw, 27px); white-space: nowrap; }
+  .archive-folder header p { margin-top: 9px; font-size: 10px; }
+  .archive-list { margin-top: 13px; }
+  .archive-list button { min-height: 72px; grid-template-columns: 31px 1fr auto; padding: 11px 5px; }
+  .archive-list span { font-size: 11px; }
+  .archive-list small { font-size: 8px; }
+  .archive-folder footer { position: static; margin-top: 22px; }
+
+  .skills-tag {
+    order: 4;
+    width: 82% !important;
+    min-height: 330px;
+    align-self: flex-start;
+    padding: 42px 28px 25px;
+  }
+  .skills-tag strong { font-size: 32px; }
+  .skills-preview { margin-top: 23px; font-size: 10px; }
+  .skills-tag em { left: 28px; bottom: 24px; font-size: 9px; }
+
+  .current-tag {
+    order: 5;
+    width: 76% !important;
+    min-height: 190px;
+    align-self: flex-end;
+    padding: 31px 25px 23px;
+  }
+  .current-tag strong { font-size: 23px; }
+  .current-tag small { font-size: 9px; }
+  .current-tag em { left: 25px; bottom: 22px; font-size: 9px; }
+
+  .contact-envelope {
+    order: 6;
+    min-height: 235px;
+    height: auto !important;
+    padding: 33px 25px 25px;
+  }
+  .contact-envelope strong { font-size: 25px; }
+  .contact-envelope small { font-size: 10px; }
+  .contact-envelope .address { left: 25px; bottom: 48px; font-size: 9px; }
+
+  .journal-scrap { display: none; }
+
+  /* Dialogs scroll as complete documents instead of spilling outside the phone. */
+  .modal {
+    width: calc(100vw - 18px);
+    max-height: calc(100dvh - 18px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .modal-close { position: sticky; top: 9px; float: right; margin: 0 5px -34px 0; }
+  .modal h2, .internship-window h2, .restaurant-window h2 { overflow-wrap: anywhere; }
+
+  .zhuhai-summary figure { width: 100%; }
+  .mini-film { grid-template-columns: 112px 1fr; }
+  .mini-film video { width: 112px; }
+  .internet-window header,
+  .internship-window header,
+  .restaurant-window header { gap: 10px; }
+
+  .internship-window { overflow: visible; }
+  .edit-desk { min-height: 535px; }
+  .capcut-screen { top: 40px; width: min(78%, 245px); }
+  .brainstorm-cloud span:nth-child(1) { left: 0; }
+  .brainstorm-cloud span:nth-child(2) { right: 0; }
+  .brainstorm-cloud span:nth-child(3) { top: 150px; left: 0; }
+  .brainstorm-cloud span:nth-child(4) { top: 150px; right: 0; }
+  .brainstorm-cloud span:nth-child(5) { top: 270px; left: 4px; }
+  .brainstorm-cloud span:nth-child(6) { top: 270px; right: 4px; }
+  .client-note { bottom: 12px; left: 0; width: 48%; }
+  .delivery-ticket { right: 0; bottom: 12px; width: 44%; }
+  .work-flow { grid-template-columns: 1fr; }
+  .work-flow span { padding: 8px 0; border-bottom: 1px solid rgba(53,48,45,.12); }
+  .work-flow span:last-child { border-bottom: 0; }
+
+  .monash-study { min-height: 480px; }
+  .course-stack { top: 205px; transform: scale(.74); transform-origin: top center; }
+
+  .restaurant-window { overflow: visible; }
+  .restaurant-scene { grid-template-columns: 1fr; min-height: 0; }
+  .character-stage { min-height: 285px; }
+  .character-stage img { width: 128px; }
+  .growth-board { gap: 18px; }
+  .responsibility-board { margin-top: 8px; }
+  .restaurant-growth { display: flex; flex-direction: column; gap: 8px; text-align: center; }
+
+  .launch-route { grid-template-columns: 1fr !important; }
+  .current-result { padding-right: 18px; }
+}
+
+@media (max-width: 360px) {
+  .board { padding-inline: 14px; }
+  .archive-folder { padding-inline: 15px; }
+  .archive-folder h1 { font-size: 20px; }
+  .archive-list span { font-size: 10px; }
+  .profile-card { width: 96% !important; }
+  .skills-tag { width: 88% !important; }
+}

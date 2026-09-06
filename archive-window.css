@@ -1,0 +1,54 @@
+.zhuhai-window{padding:34px 36px 30px;background-image:radial-gradient(circle,#6e302510 0 .5px,transparent .7px);background-size:6px 6px}.zhuhai-window header{padding-bottom:18px;border-bottom:1px solid #6e302525}.zhuhai-window h2{margin:0;font:400 31px/1 "BianZhiDai Base","Manrope",sans-serif}.zhuhai-window h2 span{display:inline-block;margin-left:10px;font:400 10px "Noto Sans SC",sans-serif;letter-spacing:.05em}.zhuhai-summary{display:grid;grid-template-columns:42% 1fr;gap:27px;margin-top:24px}.zhuhai-summary figure{position:relative;margin:0;padding:9px 9px 27px;background:#fffdf7;box-shadow:4px 7px 13px #6e302524;transform:rotate(-1.5deg)}.zhuhai-summary figure img{display:block;width:100%;height:195px;object-fit:cover}.mini-clip{position:absolute;left:50%;top:-16px;width:38px;height:24px;border:2px solid #746a61;border-radius:12px 12px 3px 3px;transform:translateX(-50%)}.mini-clip:after{content:"";position:absolute;left:-8px;bottom:-5px;width:50px;height:10px;background:#6e3025}.course-cloud>p{margin:0 0 16px;font-size:10px;line-height:1.7}.course-cloud section{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.course-cloud b{width:38px;padding-top:4px;color:#8a7b72;font-size:7px;letter-spacing:.1em}.course-cloud span{padding:4px 7px;border:1px solid #6e302528;border-radius:15px;font-size:7px}.course-cloud section:nth-child(3) span{border-color:#22a8e866}.course-cloud section:nth-child(4) span{border-color:#f04a2466}.course-cloud section:nth-child(5) span{border-color:#e8b52599}.zhuhai-outcomes{display:grid;grid-template-columns:1.45fr 1fr;gap:14px;margin-top:24px;padding-top:18px;border-top:1px solid #6e302522}.mini-film,.mini-award{margin:0;padding:10px;display:grid;align-items:center;background:#f3eee5}.mini-film{grid-template-columns:150px 1fr;gap:12px;color:#fff;background:#171717}.mini-film video{display:block;width:150px;aspect-ratio:16/9;background:#000}.mini-award{grid-template-columns:55px 1fr;gap:11px}.mini-award img{display:block;width:55px;height:72px;object-fit:cover;object-position:top}.zhuhai-outcomes b,.zhuhai-outcomes span{display:block}.zhuhai-outcomes b{font-size:9px}.zhuhai-outcomes span{margin-top:5px;color:#968b84;font-size:7px;line-height:1.5}.mini-film span{color:#b9b1ac}@media(max-width:620px){.zhuhai-window{padding:30px 22px}.zhuhai-window h2 span{display:block;margin:8px 0 0}.zhuhai-summary{grid-template-columns:1fr}.zhuhai-summary figure{width:82%;margin:auto}.zhuhai-outcomes{grid-template-columns:1fr}.mini-film{grid-template-columns:130px 1fr}.mini-film video{width:130px}}
+
+/* Archive 01 — editorial coursework file */
+.modal:has(.zhuhai-window){width:min(920px,calc(100vw - 34px));overflow:visible;background:transparent;border:0;box-shadow:none}
+.modal:has(.zhuhai-window)::backdrop{background:rgba(53,48,45,.32);backdrop-filter:blur(8px)}
+.modal:has(.zhuhai-window)>.modal-close{right:34px;top:28px;width:34px;height:40px;border:1px dashed #766d64;background:#fffdf7;font-size:22px}
+.zhuhai-window{position:relative;isolation:isolate;padding:39px 42px 25px;background-color:#fffdf7;background-image:radial-gradient(circle,rgba(110,48,37,.1) 0 .55px,transparent .72px);background-size:6px 6px;border:1px solid rgba(110,48,37,.18);box-shadow:0 24px 60px rgba(53,48,45,.28)}
+.zhuhai-paper-layer{position:absolute;inset:0;z-index:-2;background:#f8f2e8;border:1px solid rgba(110,48,37,.13);box-shadow:0 5px 13px rgba(53,48,45,.12)}
+.zhuhai-paper-layer--one{transform:translate(10px,10px) rotate(.35deg)}
+.zhuhai-paper-layer--two{transform:translate(-10px,-7px) rotate(-.25deg)}
+.zhuhai-top-clip{position:absolute;top:-32px;left:50%;width:74px;height:42px;border:3px solid #70675e;border-bottom:0;border-radius:22px 22px 0 0;transform:translateX(-50%)}
+.zhuhai-top-clip:after{position:absolute;left:-13px;bottom:-12px;width:96px;height:20px;background:#f04a24;box-shadow:0 4px 6px rgba(110,48,37,.25);content:""}
+.zhuhai-pink-tape{position:absolute;top:-10px;left:23px;width:51px;height:18px;background:rgba(229,145,169,.72);transform:rotate(-8deg)}
+.zhuhai-window header{padding-bottom:18px}
+.zhuhai-window header .modal-kicker{margin-bottom:13px;font-size:8px}
+.zhuhai-window h2{display:flex;align-items:baseline;gap:24px;font-size:39px}
+.zhuhai-window h2 span{margin:0;font-size:11px}
+.zhuhai-file-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:30px;margin-top:22px}
+.zhuhai-film-card{position:relative;padding:35px 23px 21px;color:#fffdf7;background:linear-gradient(150deg,#171717,#292827);box-shadow:6px 8px 15px rgba(53,48,45,.2)}
+.zhuhai-index{position:absolute;top:0;left:0;padding:7px 13px;background:#f04a24;font:500 12px "Manrope",sans-serif}
+.zhuhai-video-frame{padding:12px;background:#050505}
+.zhuhai-video-frame video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.zhuhai-film-card h3{margin:18px 0 3px;font:500 23px/1 "Manrope","Noto Sans SC",sans-serif}
+.zhuhai-film-card p{margin:0;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.15);color:#d9d2cc;font-size:11px}
+.zhuhai-film-card small{display:block;margin-top:15px;color:#bcb4ae;font-size:9px;line-height:1.65}
+.zhuhai-right-file{display:flex;min-width:0;flex-direction:column;gap:20px;padding-left:26px;border-left:1px solid rgba(110,48,37,.2)}
+.course-cloud>p{margin:2px 0 17px;font-size:14px;line-height:1.65}
+.course-cloud section{display:grid;grid-template-columns:25px 55px 1fr;gap:8px;align-items:center;margin:0;padding:11px 0;border-bottom:2px solid #f04a24}
+.course-cloud section:nth-of-type(2){border-color:#22a8e8}.course-cloud section:nth-of-type(3){border-color:#e96d9a}.course-cloud section:nth-of-type(4){border-color:#e8b525}
+.course-cloud b{width:auto;padding:0;color:#82776f;font-size:9px;font-weight:400}
+.course-cloud strong{font-size:13px;font-weight:500}
+.course-cloud span{padding:0;border:0!important;border-radius:0;font-size:10px;white-space:nowrap}
+.zhuhai-right-file .mini-award{position:relative;display:grid;grid-template-columns:86px 1fr;gap:18px;min-height:126px;margin:0;padding:14px 22px;background:#f7f1e8;border:1px solid rgba(110,48,37,.18);box-shadow:4px 5px 11px rgba(53,48,45,.12)}
+.zhuhai-right-file .mini-award img{width:86px;height:98px;object-fit:cover;object-position:top}
+.zhuhai-right-file .mini-award b{display:block;font-size:15px}
+.zhuhai-right-file .mini-award span{display:block;margin-top:9px;color:#675f5a;font-size:10px;line-height:1.65}
+.award-paperclip{position:absolute;left:-15px;top:39px;width:39px;height:15px;border:2px solid #9a9188;border-radius:9px;transform:rotate(18deg)}
+.award-tape{position:absolute;right:-12px;top:-7px;width:56px;height:21px;background:rgba(232,181,37,.48);transform:rotate(17deg)}
+.zhuhai-footer{display:grid;grid-template-columns:auto 1fr auto;gap:25px;align-items:center;margin-top:23px;font-size:8px;letter-spacing:.12em}
+.zhuhai-footer i{height:1px;background:rgba(110,48,37,.2)}
+.zhuhai-footer button{padding:0;border:0;background:none;color:#35302d;font:500 8px "Manrope",sans-serif;letter-spacing:.12em;cursor:pointer}
+
+@media(max-width:760px){
+ .modal:has(.zhuhai-window){width:calc(100vw - 18px);overflow-y:auto}
+ .modal:has(.zhuhai-window)>.modal-close{right:17px;top:16px}
+ .zhuhai-window{padding:34px 22px 24px}
+ .zhuhai-window h2{display:block;font-size:28px}
+ .zhuhai-window h2 span{display:block;margin-top:9px;font-size:10px}
+ .zhuhai-file-grid{grid-template-columns:1fr;gap:22px}
+ .zhuhai-right-file{padding:0;border:0}
+ .course-cloud section{grid-template-columns:23px 48px 1fr}
+ .course-cloud span{font-size:9px;white-space:normal}
+ .zhuhai-footer{gap:12px}
+}

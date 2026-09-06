@@ -1,0 +1,20 @@
+/* Readability refinements for Archive 01 and 02. */
+.zhuhai-summary { grid-template-columns: 36% 1fr; gap: 22px; margin-top: 20px; }
+.zhuhai-summary figure img { height: 205px; }
+.course-cloud>p { margin-bottom: 13px; font-size: 12px; line-height: 1.6; }
+.course-cloud section { gap: 7px; margin-top: 9px; }
+.course-cloud b { width: 42px; padding-top: 5px; font-size: 9px; }
+.course-cloud span { padding: 6px 9px; font-size: 9px; line-height: 1.1; }
+.zhuhai-outcomes { margin-top: 18px; padding-top: 16px; }
+.internet-note { padding: 18px 20px; }
+.internet-note b { font-size: 8px; }
+.internet-note p { margin: 10px 0 9px; font-size: 12px; line-height: 1.65; }
+.internet-note span { font-size: 8px; }
+/* A quieter course palette for Archive 04. */
+.course-stack span:nth-child(n) { color: #35302d; background: #fffdf7; border: 1px solid rgba(110,48,37,.16); border-left: 3px solid #6e3025; box-shadow: 3px 4px 0 rgba(110,48,37,.1); }
+.course-stack span:nth-child(even) { background: #f7f1e8; }
+/* Larger, calmer growth statement in Archive 05. */
+.restaurant-growth { padding-block: 14px; gap: 18px; }
+.restaurant-growth b { color: #6e3025; font-size: 11px; }
+.restaurant-growth span { color: #6e3025; font-size: 12px; letter-spacing: .045em; }
+@media(max-width:620px){.zhuhai-summary{grid-template-columns:1fr}.course-cloud>p{font-size:11px}.course-cloud span{font-size:8px}.internet-note p{font-size:11px}}
