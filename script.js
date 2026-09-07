@@ -259,7 +259,10 @@ const internshipPanel = `<div class="internship-window">
       <p>· ONE OF 60+ DELIVERIES</p>
       <div class="monitor-shell">
         <span class="case-label">CASE 01</span>
-        <div class="case-preview"><video controls muted playsinline preload="metadata"><source src="assets/internship/foreign-interview-full.mp4" type="video/x-m4v"></video><span class="preview-rec">● FULL CUT</span><span class="preview-caption">FOREIGN INTERVIEW · 00:46</span></div>
+        <video controls preload="metadata" playsinline>
+  <source src="assets/internship/foreign-interview-full.mp4" type="video/mp4">
+  您的浏览器暂不支持此视频。
+</video>
         <footer>案例切片 01 · 短视频剪辑</footer>
       </div>
     </article>
