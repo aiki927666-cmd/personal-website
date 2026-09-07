@@ -24,3 +24,22 @@
  .reel-card{flex-basis:158px;width:158px;height:226px}.internet-bottom{grid-template-columns:1fr}.internet-stats strong{font-size:24px}
 }
 @media(prefers-reduced-motion:reduce){.reel-track{animation:none;transform:none}.reel-card{transition:none}}
+/* 提高内容运营页面的文字可读性 */
+.internet-window p,
+.internet-window small,
+.internet-window figcaption{
+  font-size:11px !important;
+  line-height:1.55 !important;
+}
+.internet-window footer{
+  font-size:10px !important;
+  line-height:1.4 !important;
+}.internet-window .takeaway-card,
+.internet-window .takeaway-card p{
+  font-size:12px !important;
+  line-height:1.65 !important;
+}
+.internet-window figcaption{
+  font-size:10px !important;
+  font-weight:500 !important;
+}
