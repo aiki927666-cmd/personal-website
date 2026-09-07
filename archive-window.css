@@ -18,8 +18,23 @@
 .zhuhai-file-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:30px;margin-top:22px}
 .zhuhai-film-card{position:relative;padding:35px 23px 21px;color:#fffdf7;background:linear-gradient(150deg,#171717,#292827);box-shadow:6px 8px 15px rgba(53,48,45,.2)}
 .zhuhai-index{position:absolute;top:0;left:0;padding:7px 13px;background:#f04a24;font:500 12px "Manrope",sans-serif}
-.zhuhai-video-frame{padding:12px;background:#050505}
-.zhuhai-video-frame video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.zhuhai-video-frame{
+  position:relative !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:16 / 9 !important;
+  overflow:hidden !important;
+  background:#000 !important;
+}
+
+.zhuhai-video-frame video{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  background:#000 !important;
+}
 .zhuhai-film-card h3{margin:18px 0 3px;font:500 23px/1 "Manrope","Noto Sans SC",sans-serif}
 .zhuhai-film-card p{margin:0;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.15);color:#d9d2cc;font-size:11px}
 .zhuhai-film-card small{display:block;margin-top:15px;color:#bcb4ae;font-size:9px;line-height:1.65}
