@@ -180,7 +180,7 @@ const zhuhaiPanel = `<div class="zhuhai-window">
   <div class="zhuhai-file-grid">
     <article class="zhuhai-film-card">
       <span class="zhuhai-index">01</span>
-      <div class="zhuhai-video-frame"><video controls preload="metadata" playsinline><source src="assets/zhuhai/ad-creative-film.m4v" type="video/x-m4v"></video></div>
+      <div class="zhuhai-video-frame"><video controls preload="metadata" playsinline><source src="assets/zhuhai/ad-creative-film.mp4" type="video/x-m4v"></video></div>
       <h3>课堂作品</h3>
       <p>广告创意拍摄 · 01:19</p>
       <small>从想法到成片，完整参与广告创意与制作流程，<br>在实践中不断打磨表达与执行。</small>
@@ -254,7 +254,7 @@ const internshipPanel = `<div class="internship-window">
       <p>· ONE OF 60+ DELIVERIES</p>
       <div class="monitor-shell">
         <span class="case-label">CASE 01</span>
-        <div class="case-preview"><video controls muted playsinline preload="metadata"><source src="assets/internship/foreign-interview-full.m4v" type="video/x-m4v"></video><span class="preview-rec">● FULL CUT</span><span class="preview-caption">FOREIGN INTERVIEW · 00:46</span></div>
+        <div class="case-preview"><video controls muted playsinline preload="metadata"><source src="assets/internship/foreign-interview-full.mp4" type="video/x-m4v"></video><span class="preview-rec">● FULL CUT</span><span class="preview-caption">FOREIGN INTERVIEW · 00:46</span></div>
         <footer>案例切片 01 · 短视频剪辑</footer>
       </div>
     </article>
