@@ -180,7 +180,12 @@ const zhuhaiPanel = `<div class="zhuhai-window">
   <div class="zhuhai-file-grid">
     <article class="zhuhai-film-card">
       <span class="zhuhai-index">01</span>
-      <div class="zhuhai-video-frame"><video controls preload="metadata" playsinline><source src="assets/zhuhai/ad-creative-film.mp4" type="video/x-m4v"></video></div>
+      <div class="zhuhai-video-frame">
+  <video controls preload="metadata" playsinline>
+    <source src="assets/zhuhai/ad-creative-film.mp4" type="video/mp4">
+    您的浏览器暂不支持此视频。
+  </video>
+</div>
       <h3>课堂作品</h3>
       <p>广告创意拍摄 · 01:19</p>
       <small>从想法到成片，完整参与广告创意与制作流程，<br>在实践中不断打磨表达与执行。</small>
